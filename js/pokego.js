@@ -7,6 +7,11 @@ var img2 = loadImage('img/pokego240.png', main);
 var imagesLoaded = 0;
 function main() {
   makeImage(img1);
+  var button = document.getElementById('btn-download');
+  button.addEventListener('click', function (e) {
+    var dataURL = canvas.toDataURL('image/png');
+    button.href = dataURL;
+  });
 }
 
 function makeImage(img) {

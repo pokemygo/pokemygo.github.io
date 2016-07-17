@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Pok&eacute;my Go</title>
+  <style>
+
+    body {
+      background-color: yellow;
+    }
+
+    img {
+      display: block;
+      margin: auto;
+    }
+
+    canvas {
+      display: block;
+      margin: auto;
+    }
+
+    input {
+      display: block;
+      margin: auto;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <img src="img/logo.png" alt="Pokemon GO" width="300" />
+    </div>
+    <div id="imageupload">
+      <p>
+        <canvas width="240" height="417" id="canvas"></canvas>
+      </p>
+      <p>
+        <input type="file" id="fileinput" accept="image/*" onchange="newImage()"/>
+      </p>
+      <script type="text/javascript" src="js/pokego.js"></script>
+    </div>
+    <div id="footer">
+    </div>
+  </div>
+</body>
+</html>
+</html>
